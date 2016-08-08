@@ -10,9 +10,9 @@ namespace ConsoleCalculator
     {
         static void Main(string[] args)
         {
-            int firstNumber = GetInputNumber("Type your first number");
+            int firstNumber = InputUtils.GetInputNumber("Type your first number");
 
-            int secondNumber = GetInputNumber("Type your second number");
+            int secondNumber = InputUtils.GetInputNumber("Type your second number");
 
             Console.WriteLine("You wrote the numbers: " + firstNumber + " and " + secondNumber + " added it results in " + (firstNumber + secondNumber));
 
@@ -20,22 +20,6 @@ namespace ConsoleCalculator
 
         }
 
-        private static int GetInputNumber(string message)
-        {
-            Console.WriteLine(message);
-            var numberAsString = Console.ReadLine();
-
-            int number;
-
-            while (!int.TryParse(numberAsString, out number))
-            {
-                Console.WriteLine("Thats not a number, please try again");
-                numberAsString = Console.ReadLine();
-
-            }
-            Console.WriteLine("You wrote the number: " + number);
-
-            return number;
-        }
+        
     }
 }
