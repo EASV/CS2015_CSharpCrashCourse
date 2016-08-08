@@ -10,36 +10,32 @@ namespace ConsoleCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Type your first number");
-            var firstNumberAsString = Console.ReadLine();
+            int firstNumber = GetANumber("Type your first number");
 
-            int firstNumber;
-
-            while (!int.TryParse(firstNumberAsString, out firstNumber)) {
-                Console.WriteLine("Thats not a number, please try again");
-                firstNumberAsString = Console.ReadLine();
-
-            }
-            Console.WriteLine("You wrote the number: " + firstNumber);
-
-            Console.WriteLine("Type your second number");
-            var secondNumberAsString = Console.ReadLine();
-
-            int secondNumber;
-
-            while (!int.TryParse(secondNumberAsString, out secondNumber))
-            {
-                Console.WriteLine("Thats not a number, please try again");
-                secondNumberAsString = Console.ReadLine();
-
-            }
-
-            Console.WriteLine("You wrote the number: " + secondNumber);
-
-
+            int secondNumber = GetANumber("Type your second number");
+            
             Console.WriteLine("You wrote the numbers: " + firstNumber + " and " + secondNumber + " added it results in " + (firstNumber + secondNumber));
 
             Console.ReadLine();
+
+        }
+
+        private static int GetANumber(string message)
+        {
+            Console.WriteLine(message);
+            var numberAsString = Console.ReadLine();
+
+            int number;
+
+            while (!int.TryParse(numberAsString, out number))
+            {
+                Console.WriteLine("Thats not a number, please try again");
+                numberAsString = Console.ReadLine();
+
+            }
+            Console.WriteLine("You wrote the number: " + number);
+
+            return number;
         }
     }
 }
