@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputNumbers", "InputNumber
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceVsValueType", "ConsoleApplication1\ReferenceVsValueType.csproj", "{57B94579-C2C6-46D2-A327-7CC77BDC69B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCalculator", "ConsoleCalculator\ConsoleCalculator.csproj", "{FF80BC76-3C2F-4F31-8944-436A973963A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{57B94579-C2C6-46D2-A327-7CC77BDC69B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57B94579-C2C6-46D2-A327-7CC77BDC69B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B94579-C2C6-46D2-A327-7CC77BDC69B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
