@@ -10,17 +10,17 @@ namespace ConsoleCalculator
     {
         static void Main(string[] args)
         {
-            int firstNumber = GetANumber("Type your first number");
+            int firstNumber = GetInputNumber("Type your first number");
 
-            int secondNumber = GetANumber("Type your second number");
-            
+            int secondNumber = GetInputNumber("Type your second number");
+
             Console.WriteLine("You wrote the numbers: " + firstNumber + " and " + secondNumber + " added it results in " + (firstNumber + secondNumber));
 
             Console.ReadLine();
 
         }
 
-        private static int GetANumber(string message)
+        private static int GetInputNumber(string message)
         {
             Console.WriteLine(message);
             var numberAsString = Console.ReadLine();
