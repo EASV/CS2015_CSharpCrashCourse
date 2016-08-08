@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceVsValueType", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCalculator", "ConsoleCalculator\ConsoleCalculator.csproj", "{FF80BC76-3C2F-4F31-8944-436A973963A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConsole", "CarConsole\CarConsole.csproj", "{084B032A-6962-4323-AB86-3681D14BE00F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{084B032A-6962-4323-AB86-3681D14BE00F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084B032A-6962-4323-AB86-3681D14BE00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084B032A-6962-4323-AB86-3681D14BE00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084B032A-6962-4323-AB86-3681D14BE00F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
