@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -49,6 +49,7 @@ Global
 		{57B94579-C2C6-46D2-A327-7CC77BDC69B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57B94579-C2C6-46D2-A327-7CC77BDC69B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B94579-C2C6-46D2-A327-7CC77BDC69B9}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF80BC76-3C2F-4F31-8944-436A973963A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +58,8 @@ Global
 		{084B032A-6962-4323-AB86-3681D14BE00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{084B032A-6962-4323-AB86-3681D14BE00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{084B032A-6962-4323-AB86-3681D14BE00F}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> parent of 13ea5ed... Removed wrong project
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
