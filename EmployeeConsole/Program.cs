@@ -11,26 +11,34 @@ namespace EmployeeConsole
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee()
+            int menuSelection = -1;
+            while (menuSelection != 0)
             {
-                Name = "Lars Bilde",
-                Email = "theEmail@Email.com",
-                Department = "The cool place",
-                SalaryLevel = 10000,
-                WeeklyWorkHours = 2
-            };
+                Console.WriteLine("What do you wanna do? ");
+                Console.WriteLine("Press 0 to Exit");
+                Console.WriteLine("Press 1 to create Employee");
+                var valueSelectedAsString = Console.ReadLine();
+                if (int.TryParse(valueSelectedAsString, out menuSelection))
+                {
+                    if (menuSelection == 0)
+                    {
+                        Console.WriteLine("Bye bye");
+                    }
+                    else if (menuSelection == 1)
+                    {
+                        Console.WriteLine("Create employee code here!!");
 
-            Console.WriteLine(employee);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Not a valid Number, please try again ");
 
-            Console.WriteLine("\n\n\nOnly the salary: " + employee.CalculatedSalery);
-            
-            if (employee.CalculatedSalery > 2000)
-            {
-                Console.WriteLine($"You are filthy rich earning {employee.CalculatedSalery} $");
-            }
-            else
-            {
-                Console.WriteLine("Talk to the boss, u need more money");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Not a Number, please try again ");
+                }
             }
 
             Console.ReadLine();

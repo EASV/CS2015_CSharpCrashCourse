@@ -21,14 +21,10 @@ namespace EmployeeConsole
         public double CalculatedSalery {
             get{ return SalaryLevel * 700.0; }
         }
-
-        public double GetCalculatedSalery() {
-            return SalaryLevel * 700.0;
-        }
         
         public override string ToString()
         {
-            return $" Name: {Name} \t\t\n Email: {Email} \t\t\n SalaryLevel: {SalaryLevel} \t\n Salary: {GetCalculatedSalery()} \t\n WeeklyWorkHours: {WeeklyWorkHours} \t\n Department: {Department} ";
+            return $" Name: {Name} \t\t\n Email: {Email} \t\t\n SalaryLevel: {SalaryLevel} \t\n Salary: {CalculatedSalery} \t\n WeeklyWorkHours: {WeeklyWorkHours} \t\n Department: {Department} ";
         }
     }
 }
