@@ -21,6 +21,11 @@ namespace CarConsole.Model
             Console.WriteLine("eeehehhhhhhehhhhh");
         }
 
+        public int AccidentCount()
+        {
+            return 29;
+        }
+
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
