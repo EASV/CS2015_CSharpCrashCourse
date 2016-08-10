@@ -11,29 +11,34 @@ namespace EmployeeConsole
     {
         static void Main(string[] args)
         {
+            EmployeeManager employeeManager = new EmployeeManager();
             int menuSelection = -1;
             while (menuSelection != 0)
             {
                 Console.WriteLine("What do you wanna do? ");
                 Console.WriteLine("Press 0 to Exit");
                 Console.WriteLine("Press 1 to create Employee");
+                Console.WriteLine("Press 2 to show Employees");
                 var valueSelectedAsString = Console.ReadLine();
                 if (int.TryParse(valueSelectedAsString, out menuSelection))
                 {
-                    if (menuSelection == 0)
+                    switch (menuSelection)
                     {
-                        Console.WriteLine("Bye bye");
+                        case 0:
+                            Console.WriteLine("Bye bye");
+                            break;
+                        case 1:
+                            Console.WriteLine("Type Email:");
+                            employeeManager.CreateEmployee(Console.ReadLine());
+                            break;
+                        case 2:
+                            employeeManager.PrintAllEmployees();
+                            break;
+                        default:
+                            Console.WriteLine("Not a valid Number, please try again ");
+                            break;
                     }
-                    else if (menuSelection == 1)
-                    {
-                        Console.WriteLine("Create employee code here!!");
-
-                    }
-                    else
-                    {
-                        Console.WriteLine("Not a valid Number, please try again ");
-
-                    }
+                    
                 }
                 else
                 {
@@ -42,7 +47,6 @@ namespace EmployeeConsole
                 }
                 /// Just a Comment
             }
-
             Console.ReadLine();
         }
     }
