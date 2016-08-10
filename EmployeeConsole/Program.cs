@@ -38,7 +38,9 @@ namespace EmployeeConsole
                 else
                 {
                     Console.WriteLine("Not a Number, please try again ");
+                    menuSelection = -1;
                 }
+                /// Just a Comment
             }
 
             Console.ReadLine();
