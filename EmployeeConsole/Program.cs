@@ -29,7 +29,8 @@ namespace EmployeeConsole
                             break;
                         case 1:
                             Console.WriteLine("Type Email:");
-                            employeeManager.CreateEmployee(Console.ReadLine());
+                            var email = Console.ReadLine();
+                            Console.WriteLine(employeeManager.CreateEmployee(email));
                             break;
                         case 2:
                             employeeManager.PrintAllEmployees();

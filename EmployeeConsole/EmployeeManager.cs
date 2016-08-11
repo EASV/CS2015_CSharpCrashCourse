@@ -15,17 +15,43 @@ namespace EmployeeConsole
         
         private List<Employee> employessAsList = new List<Employee>();
 
-        public void CreateEmployee(string email, string name = "Unknown", string department = "Unknown", int salaryLevel = 1)
+        public string CreateEmployee(string email)
         {
+            if(email == "" || email == null)
+            {
+                return "No Employee Created, please specify an Email";
+
+            }
+
             Employee empl = new Employee() {
-                Name = name,
-                Department = department,
-                Email = email,
-                SalaryLevel = salaryLevel
+                Email = email
             };
 
+            Console.WriteLine("Type Name:");
+            var name = Console.ReadLine();
+            empl.Name = name != "" ? name : "Unknown";
+
+            Console.WriteLine("Type Department:");
+            var department = Console.ReadLine();
+            empl.Department = department != "" ? department : "Unknown";
+            /*if (department != "") {
+                empl.Department = department;
+            }
+            else {
+                empl.Department = "Unknown";
+            }*/
+
+            Console.WriteLine("Type SalaryLevel:");
+            int salaryLevel;
+            empl.SalaryLevel = int.TryParse(Console.ReadLine(), out salaryLevel) ? salaryLevel : 1;
+
+            Console.WriteLine("Type WeeklyHours:");
+            int weeklyHours;
+            empl.WeeklyWorkHours = int.TryParse(Console.ReadLine(), out weeklyHours) ? weeklyHours : 7;
+          
             employessAsList.Add(empl);
 
+            return "Employee Created Successfully";
 
         }
 
