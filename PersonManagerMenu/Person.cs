@@ -21,7 +21,7 @@ namespace PersonManagerMenu
 
         public override string ToString()
         {
-            return $"{Name} {Gender} - Born this year: {BirthDate.Year}";
+            return $"{Name} {Gender} - Born this year: {BirthDate.Year} - Email: {Email}";
         }
     }
     
